@@ -1,0 +1,123 @@
+
+@mixin Flex($df,$jc,$ai,$fd,$fw,$mt) {
+    display: $df;
+    justify-content: $jc;
+    align-items:$ai;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+    margin-top: $mt;
+}
+@mixin colorswidth($w,$h,$bc) {
+    width: $w;
+    height: $h;
+    background-color: $bc;
+    
+}
+
+@mixin text ($cl,$fs,$ta){
+    color: $cl;
+    font-size: $fs;
+    text-align: $ta;
+}
+
+// .big_box{
+//     @include Flex(center,space-around,null,null,null);
+//     @include colorswidth(null,300px,red);
+    
+// } 
+
+
+
+
+
+.bg1{
+   @include colorswidth(100%,600px,#1f201f);
+   @include Flex(flex,space-around,null,null,null,null);
+}
+
+.bg2{
+  @include Flex(flex,space-around,null,null,null,null);
+  @include colorswidth(null,null,#00d323d2);
+ }
+
+ .bg3{
+    @include Flex(flex,space-around,null,null,null,200px);
+    
+    
+   }
+ .img1{
+    @include colorswidth(200px,30px,null);
+    @include Flex(null,null,null,null,null,15px);
+ }
+
+
+ .p{
+    @include text(#ffffff,30px,center);
+ }
+
+ .img2{
+    @include colorswidth(31px,64px,null);
+ }
+
+ .img3{
+    @include colorswidth(31px,64px,null);
+ }
+
+ .input{
+    @include colorswidth(300px,30px,null);
+ }
+
+ .img4{
+    @include colorswidth(35px,35px,#ffffff);
+  
+ }
+
+
+ .tox{
+    @include Flex(flex,center,null,null,null,50px);
+ }
+
+ .p1{
+    @include text( #8b8b8b,40px,center);
+ }
+
+ .button{
+    @include colorswidth(250px,60px,#8fcddc);
+    @include Flex(null,null,null,null,null,35px);
+ }
+
+ .p2{
+    @include text( #ffffff,20px,null);
+ }
+
+
+ .gic{
+    @include colorswidth(100%,1px,#8b8b8b);
+ }
+
+ .p5{
+    @include text( #3d3939,30px,center);
+ }
+
+ .verch{
+    @include Flex(flex,space-around,null,null,null,60px);
+ }
+
+ .verch1{
+    @include text( #999393,null,null);
+ }
+
+ .footer{
+    @include colorswidth(100%,50px,#413d3d);
+ }
+
+ .p8{
+    @include text( #ffffff,15px,center);
+ }
+
+
+ @media (max-width:800px) {
+    .verch{
+        @include Flex(flex,center,center,column,null,null);
+    }
+}

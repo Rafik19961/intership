@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="all">
+      <!-- HEADER -->
+        <div class="menu">
+        <div class="logo"><img src="image/bw.png" class="bw" /></div>
+        <div class="icon1"><img src="image/2.png" /> </div>
+        <div class="icon1"><img src="image/3.png" /></div>
+        <div class="icon1"><img src="image/4.png" /></div>
+        <div class="icon1"><img src="image/5.png" /></div>
+        <div class="icon1"><img src="image/6.png" /></div>
+        <div class="icon1"><img src="image/7.png" /></div>
+        <div class="icon1"><img src="image/8.png" /></div>
+        <div class="icon2"><img src="image/9.png" /></div>
+        <div class="icon2"><img src="image/10.png" /></div>
+        <div class="icon2"><img src="image/11.png" /></div>
+        <div class="icon3"></div>
+       </div>
+       <div class="top" >
+       <div class="bg4">
+        <div class="bg2"><img src="image/1.png" class="img1" alt="" /></div>
+
+        <div class="bg3">
+          <img src="image/Layer 46.png" class="img2" alt="" />
+          <img src="image/Photo.png" alt="error" class="img3" />
+          <div class="p0">
+            <p class="p1">Hello, Max!</p>
+            <p class="p2">Last login: Thu Mar 20 2014</p>
+
+          </div>
+          <img src="image/0.png" class="arrow1"> 
+         </div>
+      
+          </div>
+          <div class="dash2">
+          <div class="dash"><img src="image/dash.png" > <p>Dashboard</p></div> 
+          <div class="dash1"><img src="image/12.png" > <p>ADD THIS PAGE TO FAVORITES</p></div> 
+        </div>    
+      <!-- HEADER -->  
+      <!-- Container -->
+        <div class="number">
+         <div class="number1"> <img src="image/25 .png" class="num1">  <img src="image/ SIGNUPS.png  " class="num2"></div>
+         <div class="number2"> <img src="image/$1000 .png" class="num3">  <img src="image/ Profit.png  " class="num4"> </div>
+         <div class="number3"> <img src="image/$350 .png" class="num5">  <img src="image/  COMMISSIONS.png  " class="num6"></div>
+         <div class="number4"> <img src="image/$300 .png" class="num7">  <img src="image/ PENDING COMMISSION.png" class="num8"> </div>
+        </div>
+        <div class="grafhhh">
+        <div class="grafh">
+        <div class="ver"><h4>Medias Staats</h4> <img src="image/Last week  .png"></div>
+        <canvas id="myChart" style="max-width:500px"></canvas>
+
+        <script>
+        var xValues = [-60,-40,-20,0,20,40,60 ];
+   
+        new Chart("myChart", {
+        type: "line",
+        data: {
+        labels: xValues,
+        datasets: [{ 
+          data: [6600,7400,3600,1060,3000,6000,7100],
+          borderColor: "#00ACAC",
+          fill: false
+        }, { 
+          data: [4500,8000,5100,1900,1200,3700,6800],
+          borderColor: "#FBCF71",
+          fill: false
+        }, { 
+          data: [1000,5000,8000,4600,700,2700,5300],
+          borderColor: "#2075AC",
+          fill: false
+        }]
+       },
+       options: {
+        legend: {display: false}
+       }
+       });
+       </script>
+       <div class="tak">  
+       <div class="poqr1"><p>Clicks</p></div>
+       <div class="poqr3"><p>Views</p></div>  
+       <div class="poqr2"><p>SignUps</p></div>
+      
+       </div>
+   
+       </div>
+
+       <div class="grafh2">
+       <h4>Active Medias</h4>
+       <canvas id="myChartt" style="max-width:500px"></canvas>
+       <script>
+        var xValues = ["Views", "Sign Up", "Clicks", ];
+        var yValues = [160, 120, 240, ];
+        var barColors = [
+       "#2075AC",
+       "#00ACAC", 
+       "#FBCF71",    
+  
+        ];
+        
+        new Chart("myChartt", {
+          type: "doughnut",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            title: {
+              display: true,
+              }
+          }
+        });
+        </script>
+        <p>Total clicks   240</p>
+        <p>Total views   160</p>
+        <p>Total sign ups   120</p>
+       </div>
+       <div class="grafh3"> 
+       <div class="ver"><h4>Geographic Data</h4> <img src="image/Last Month  .png" class="month"></div>
+       <div class="ere">
+       <div class="putik"><img src="image/grey.png"  alt="" > <img src="image/grey.png" alt=""> </div>
+       <div class="world"><img src="image/world.png" alt=""></div>
+       </div> 
+       <div class="aff"><img src="image/Affiliate Sign Ups  .png"></div>
+       <diV class="bff">  </diV>
+       <table>
+       
+        <tr>
+          <td>1.United States </td>
+          <td></td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>2.China</td>
+          <td></td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>3.United Kingdom</td>
+          <td></td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>4.Russia</td>
+          <td></td>
+          <td>250</td>
+        </tr>
+        </table>
+      
+        </div>
+     
+        </div>
+     <!-- Container -->
+     <!-- Footer -->
+      <div class="tab">
+        <div class="tab1"> <table>
+        <tr>
+        <th colspan="5">Top Affiliates</th>
+       
+        </tr>
+        <tr>
+        <td>ID</td>
+        <td>Username</td>
+        <td>Profit($)</td>
+        <td>Comission($)</td>
+        <td>View</td>
+        </tr>
+        <tr>
+        <td>1007</td>
+        <td>Simona</td>
+        <td>55</td>
+        <td>Simona</td>
+        <td><img src="image/kis.jpg"></td>
+        </tr>
+        <tr>
+        <td>1008</td>
+        <td>Ariana</td>
+        <td>45</td>
+        <td>Adelina</td>
+       <td><img src="image/kis.jpg"></td>
+       </tr>
+        <tr>
+        <td>1009</td>
+        <td>Adam</td>
+        <td>35</td>
+        <td>Adam</td>
+       <td><img src="image/kis.jpg"></td>
+       </tr>
+       <tr>
+        <td>1010</td>
+        <td>John</td>
+        <td>25</td>
+        <td>John</td>
+       <td><img src="image/kis.jpg"></td>
+       </tr>
+       <tr>
+        <td>1011</td>
+        <td>Garry</td>
+        <td>15</td>
+        <td>Garry</td>
+        <td><img src="image/kis.jpg"></td>
+       </tr>
+       </table>
+       </div>
+       <div class="gic"></div>
+       <div class="tab2"><table>
+       <tr>
+        <th colspan="5">Signups</th>
+       
+       </tr>
+       <tr>
+        <td>ID</td>
+        <td>Username</td>
+        <td>Profit($)</td>
+        <td>Comission($)</td>
+        <td>View</td>
+       </tr>
+       <tr>
+        <td>1007</td>
+        <td>Simona</td>
+        <td>55</td>
+        <td>Simona</td>
+        <td><img src="image/kis.jpg"></td>
+       </tr>
+       <tr>
+        <td>1008</td>
+        <td>Ariana</td>
+        <td>45</td>
+        <td>Adelina</td>
+       <td><img src="image/kis.jpg"></td>
+       </tr>
+       <tr>
+        <td>1009</td>
+        <td>Adam</td>
+        <td>35</td>
+        <td>Adam</td>
+       <td><img src="image/kis.jpg"></td>
+       </tr>
+       <tr>
+        <td>1010</td>
+        <td>John</td>
+        <td>25</td>
+        <td>John</td>
+       <td><img src="image/kis.jpg"></td>
+       </tr>
+       <tr>
+        <td>1011</td>
+        <td>Garry</td>
+        <td>15</td>
+        <td>Garry</td>
+        <td><img src="image/kis.jpg"></td>
+       </tr>
+       </table>
+       </div>
+       <div class="gic"></div>
+       <div class="tab3"><table>
+       <tr>
+        <th colspan="5">Pending Commissions</th>
+       
+       </tr>
+       <tr>
+        <td>ID</td>
+        <td>Username</td>
+        <td>Profit($)</td>
+        <td>Comission($)</td>
+        <td>View</td>
+       </tr>
+       <tr>
+        <td>1007</td>
+        <td>Simona</td>
+        <td>55</td>
+        <td>Simona</td>
+        <td><img src="image/kis.jpg"></td>
+       </tr>
+       <tr>
+        <td>1008</td>
+        <td>Ariana</td>
+        <td>45</td>
+        <td>Adelina</td>
+       <td><img src="image/kis.jpg"></td>
+       </tr>
+       <tr>
+        <td>1009</td>
+        <td>Adam</td>
+        <td>35</td>
+        <td>Adam</td>
+       <td><img src="image/kis.jpg"></td>
+       </tr>
+       <tr>
+        <td>1010</td>
+        <td>John</td>
+        <td>25</td>
+        <td>John</td>
+       <td><img src="image/kis.jpg"></td>
+       </tr>
+       <tr>
+        <td>1011</td>
+        <td>Garry</td>
+        <td>15</td>
+        <td>Garry</td>
+        <td><img src="image/kis.jpg"></td>
+       </tr>
+       </table>
+       </div>
+       </div>
+       </div>
+       </div>
+      </div>
+      <!-- Footer -->
+    </div>
+
+
+
+
+
+
+    
+  </body>
+</html>
